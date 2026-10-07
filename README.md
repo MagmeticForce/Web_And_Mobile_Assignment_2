@@ -67,6 +67,6 @@ const loggerSchema = {
   phInput: "float",
   electricalConductivity: "float",
   airTemperature: "float",
-  relativeHumidity: "float",
+  relativeHumidity: "float"
 };
 ```
