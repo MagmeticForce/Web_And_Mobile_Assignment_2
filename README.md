@@ -15,7 +15,9 @@
 * To notify the user that an out-of-bounds input has been entered, a <div> will be dynamically changed in order to display a visual "Error" pop-up. The id attribute will help the underlying JavaScript, and the rule attribute will be used to specify that it is an "alert."
 * To remove accidental submissions, each dynamically-generated card will contain a "delete" button, allowing the user to remove the card from the output.
 
-## Componet, DOM Tree & Event Target Architecture
+## Component, DOM Tree & Event Target Architecture
+
+```html
 * <body> [STATIC]
   * <header class="portal-header"> (CSS: flex on row, space-between, centered) [STATIC]
     * <div class="header-content"> [STATIC]
@@ -56,11 +58,15 @@
         * <li class="record-card"> [DYNAMIC]
   * <footer class="portal-footer"> (flex on column, space-between, center) [STATIC]
     * <p> (copyright text) [STATIC]
+```
 
 ## Data Schema
+
+```
 const loggerSchema = {
   phInput: "float",
   electricalConductivity: "float",
   airTemperature: "float",
   relativeHumidity: "float",
 };
+```
