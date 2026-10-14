@@ -30,70 +30,85 @@
 
         <!-- Form input -->
         <form id="data-form" action="#" novalidate>
-          <div class="form-group">
-            <label for="ph" class="form-label">
-              pH
-              <span class="required">*</span>
-            </label>
-            <input
-              type="number"
-              name="ph"
-              id="ph"
-              class="form-control"
-              min="0"
-              max="14"
-              placeholder="6"
-              required
-            />
+          <div class="form-wrapper">
+            <div class="form-group">
+              <label for="bay-name" class="form-label">
+                Bay Name <span class="required">*</span>
+              </label>
+              <input
+                type="text"
+                name="bay-name"
+                id="bay-name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="ph" class="form-label">
+                pH
+                <span class="required">*</span>
+              </label>
+              <input
+                type="number"
+                name="ph"
+                id="ph"
+                class="form-control"
+                min="0"
+                max="14"
+                placeholder="6"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="ec" class="form-label">
+                EC
+                <span class="required">*</span>
+              </label>
+              <input
+                type="number"
+                name="ec"
+                id="ec"
+                class="form-control"
+                min="0"
+                max="10"
+                placeholder="1.8"
+                required
+              />
+            <div class="form-group">
+              <label for="air-temperature" class="form-label">
+                Air Temperature (°F) <span class="required">*</span>
+              </label>
+              <input
+                type="number"
+                name="air-temperature"
+                id="air-temperature"
+                class="form-control"
+                min="-4"
+                max="140"
+                placeholder="75"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="relative-humidity" class="form-label">
+                Relative Humidity <span class="required">*</span>
+              </label>
+              <input
+                type="number"
+                name="relative-humidity"
+                id="relative-humidity"
+                class="form-control"
+                min="0"
+                max="100"
+                placeholder="65"
+                required
+              />
+            </div>
+            <button type="submit" id="button-submit" class="button button-primary button-block">
+              Log Data
+            </button>
           </div>
-          <div class="form-group">
-            <label for="ec" class="form-label">
-              EC
-              <span class="required">*</span>
-            </label>
-            <input
-              type="number"
-              name="ec"
-              id="ec"
-              class="form-control"
-              min="0"
-              max="10"
-              placeholder="1.8"
-              required
-            />
-          <div class="form-group">
-            <label for="air-temperature" class="form-label">
-              Air Temperature (°F) <span class="required">*</span>
-            </label>
-            <input
-              type="number"
-              name="air-temperature"
-              id="air-temperature"
-              class="form-control"
-              min="-4"
-              max="140"
-              placeholder="75"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="relative-humidity" class="form-label">
-              Relative Humidity <span class="required">*</span>
-            </label>
-            <input
-              type="number"
-              name="relative-humidity"
-              id="relative-humidity"
-              class="form-control"
-              min="0"
-              max="100"
-              placeholder="65"
-              required
-            />
-          </div>
-          <button type="submit" id="button-submit" class="button button-primary button-block">
-            Log Data
-          </button>
         </form>
       </aside>
 
